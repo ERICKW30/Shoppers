@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
-const Navbar = () => {
+export const Navbar = () => {
   const [menu, setMenu] = useState("shop");
   return (
     <div className="navbar">
@@ -20,11 +20,11 @@ const Navbar = () => {
           }}
         >
           <Link to="/">Shop</Link>
-          {menu === "shop" ? <hr /> : <></>}{" "}
+          {menu === "shop" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
-            setMenu("men");
+            setMenu("mens");
           }}
         >
           <Link to="/mens">Men</Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
         </li>
         <li
           onClick={() => {
-            setMenu("women");
+            setMenu("womens");
           }}
         >
           <Link to="/womens">Women</Link>
@@ -49,7 +49,8 @@ const Navbar = () => {
       </ul>
       <div className="nav-login-cart">
         <Link to="/login"></Link>
-        <Button variant="outline-login">LOGIN</Button> <Link to="/cart"></Link>
+        <Button variant="outline-warning">LOGIN</Button>{" "}
+        <Link to="/cart"></Link>
         <img src={cart_icon} alt="" />
         <div className="nav-cart-count">0</div>
       </div>
