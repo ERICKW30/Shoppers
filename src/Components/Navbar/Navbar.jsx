@@ -57,7 +57,9 @@ export const Navbar = () => {
       </ul>
       <div className="nav-login-cart">
         <Link to="/login"></Link>
-        <Button variant="outline-warning">LOGIN</Button>{" "}
+        <Button id="btn-warn" variant="outline-warning">
+          LOGIN
+        </Button>{" "}
         <Link to="/cart"></Link>
         <img src={cart_icon} alt="" />
         <div className="nav-cart-count">0</div>

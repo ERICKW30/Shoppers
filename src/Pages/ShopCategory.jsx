@@ -1,12 +1,12 @@
-import Hero from "../Components/Hero/Hero";
-import Popular from "../Components/Popular/Popular";
-import Offers from "../Components/Offers/Offers";
-const ShopCategory = () => {
+import { useContext } from "react";
+import { ShopContext } from "../Context/ShopContext";
+import "./CSS/ShopCategory.css";
+const ShopCategory = (props) => {
+  const { all_product } = useContext(ShopContext);
+
   return (
-    <div>
-      <Hero />
-      <Popular />
-      <Offers />
+    <div className="shop-category">
+      <img src={props.banner} alt="" />
     </div>
   );
 };
