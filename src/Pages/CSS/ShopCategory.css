@@ -32,3 +32,21 @@
   justify-content: space-between;
   padding: 10px;
 }
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+  margin-left: 750px;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: rgb(102, 98, 90);
+  color: rgb(233, 248, 16);
+  font-size: 0.7cm;
+  font-weight: 500;
+}
+.shopcategory-loadmore:hover {
+  color: rgb(15, 17, 17);
+  background-color: rgb(199, 137, 56);
+}

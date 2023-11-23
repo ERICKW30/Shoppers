@@ -32,6 +32,7 @@ const ShopCategory = (props) => {
             />
           ))}
       </div>
+      <div className="shopcategory-loadmore">Explore Mengine.</div>
     </div>
   );
 };
