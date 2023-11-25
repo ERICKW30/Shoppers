@@ -1,16 +1,17 @@
 import { InputGroup } from "react-bootstrap";
 import "./CSS/LoginSignup.css";
+import Button from "react-bootstrap/Button";
 const LoginSignup = () => {
   return (
     <div className="loginsignup">
       <div className="loginSignup-container">
         <h1>SIgn Up</h1>
-        <div className="loginsignup-fields">
-          <InputGroup type="text" placeholder="Jina Lako" />
+        <div className="loginsig nup-fields">
+          <input type="text" placeholder="Jina Lako" />
           <input type="email" placeholder="Email Address" />
           <input type="password" placeholder="Password" />
         </div>
-        <button>Endelea</button>
+        <Button variant="warning">Endelea</Button>
         <p className="loginsignup-login">
           Uko na account Jamaa? <span>Login hapa</span>
         </p>
