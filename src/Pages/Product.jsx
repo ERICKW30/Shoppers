@@ -1,19 +1,17 @@
-import ".Item.css";
-import { link } from "react-router-dom";
+import { useContext } from "react";
+import { ShopContext } from "../Context/ShopContext";
+import { useParams } from "react-router-dom";
+import { Breadcrumb } from "react-bootstrap";
 
-const Product = (props) => {
+const Product = () => {
+  const { all_product } = useContext(ShopContext);
+  const { productId } = useParams();
+  const product = all_product.find((e) => e.id === Number(productId));
+
   return (
-    <div className="item">
-      <link to={"/product/${props.id"}>
-        <img src={props.image} alt="" />
-      </link>
-      <p>{props.name}</p>
-      <div className="item-prices">
-        <div className="item-price-new">${props.new_price}</div>
-        <div className="item-price-old">${props.old_price}</div>
-      </div>
+    <div>
+      <Breadcrumb product={product} />
     </div>
   );
 };
-
 export default Product;

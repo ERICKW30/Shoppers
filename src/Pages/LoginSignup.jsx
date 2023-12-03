@@ -1,4 +1,3 @@
-import { InputGroup } from "react-bootstrap";
 import "./CSS/LoginSignup.css";
 import Button from "react-bootstrap/Button";
 const LoginSignup = () => {
