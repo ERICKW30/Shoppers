@@ -1,11 +1,10 @@
 import "./Item.css";
 import { Link } from "react-router-dom";
-const Item = ({ image, name, new_price, old_price }) => {
+const Item = ({ id, image, name, new_price, old_price }) => {
   return (
     <div className="item">
-      <Link to={"./product/${props.id}"}>
-        {" "}
-        <img src={image} alt="" />{" "}
+      <Link to={`./product/${id}`}>
+        <img src={image} alt="" />
       </Link>
       <p>{name}</p>
       <div className="item-prices">
