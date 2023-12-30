@@ -43,6 +43,8 @@ let all_product = [
     image: p1_img,
     new_price: 50.0,
     old_price: 80.5,
+    description:
+      "Elevate your style with this sophisticated Striped Flutter Sleeve Blouse. Featuring an overlap collar and a peplum hem, it's perfect for a trendy and chic look.",
   },
   {
     id: 2,
@@ -51,6 +53,8 @@ let all_product = [
     image: p2_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Make a fashion statement with this elegant Striped Flutter Sleeve Peplum Hem Blouse. The overlap collar adds a touch of glamour, making it a versatile choice for any occasion.",
   },
   {
     id: 3,
@@ -59,6 +63,8 @@ let all_product = [
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,
+    description:
+      "Step out in style with this Striped Flutter Sleeve Blouse. The peplum hem and overlap collar create a flattering silhouette, making it a wardrobe essential for any fashion-forward woman.",
   },
   {
     id: 4,
@@ -67,6 +73,8 @@ let all_product = [
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
+    description:
+      "Enhance your wardrobe with this stunning Striped Flutter Sleeve Peplum Hem Blouse. The overlap collar and peplum hem add a touch of sophistication, making it perfect for special occasions.",
   },
   {
     id: 5,
@@ -75,6 +83,8 @@ let all_product = [
     image: p5_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Achieve a polished look with this Striped Flutter Sleeve Blouse. The overlap collar and peplum hem create a feminine silhouette, making it a must-have for any fashion-forward woman.",
   },
   {
     id: 6,
@@ -83,6 +93,8 @@ let all_product = [
     image: p6_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Upgrade your wardrobe with this stylish Striped Flutter Sleeve Peplum Hem Blouse. The overlap collar adds a touch of sophistication, making it a versatile choice for both casual and formal occasions.",
   },
   {
     id: 7,
@@ -91,6 +103,8 @@ let all_product = [
     image: p7_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Make a statement with this chic Striped Flutter Sleeve Blouse. The overlap collar and peplum hem add a touch of elegance, making it perfect for any fashion-forward woman.",
   },
   {
     id: 8,
@@ -99,6 +113,8 @@ let all_product = [
     image: p8_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Elevate your style with this sophisticated Striped Flutter Sleeve Peplum Hem Blouse. The overlap collar creates a flattering neckline, making it a timeless addition to your wardrobe.",
   },
   {
     id: 9,
@@ -107,6 +123,8 @@ let all_product = [
     image: p9_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Step out in confidence with this Striped Flutter Sleeve Blouse. The overlap collar and peplum hem add a modern twist, making it a stylish choice for any occasion.",
   },
   {
     id: 10,
@@ -115,6 +133,8 @@ let all_product = [
     image: p10_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Enhance your wardrobe with this elegant Striped Flutter Sleeve Peplum Hem Blouse. The overlap collar and peplum hem create a flattering silhouette, perfect for a sophisticated look.",
   },
   {
     id: 11,
@@ -123,6 +143,8 @@ let all_product = [
     image: p11_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Make a style statement with this Striped Flutter Sleeve Blouse. The overlap collar and peplum hem add a touch of flair, making it a versatile choice for any fashion-conscious woman.",
   },
   {
     id: 12,
@@ -131,6 +153,8 @@ let all_product = [
     image: p12_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Upgrade your wardrobe with this chic Striped Flutter Sleeve Peplum Hem Blouse. The overlap collar adds a touch of sophistication, making it a timeless piece for any stylish woman.",
   },
   {
     id: 13,
@@ -139,6 +163,8 @@ let all_product = [
     image: p13_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Stay on trend with this Men's Green Slim Fit Bomber Jacket. The zippered design adds a modern touch, making it a stylish choice for casual outings.",
   },
   {
     id: 14,
@@ -147,6 +173,8 @@ let all_product = [
     image: p14_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Elevate your casual look with this Men's Green Solid Bomber Jacket. The full-zip design and slim fit silhouette make it a must-have for any fashion-conscious man.",
   },
   {
     id: 15,
@@ -155,6 +183,8 @@ let all_product = [
     image: p15_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Make a statement with this Men's Green Solid Slim Fit Bomber Jacket. The full-zip design and stylish silhouette add a contemporary edge to your casual wardrobe.",
   },
   {
     id: 16,
@@ -163,6 +193,8 @@ let all_product = [
     image: p16_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Upgrade your outerwear with this Men's Green Solid Slim Fit Bomber Jacket. The full-zip design and slim fit silhouette make it a versatile and stylish choice for any casual occasion.",
   },
   {
     id: 17,
@@ -171,6 +203,8 @@ let all_product = [
     image: p17_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Achieve a sleek and modern look with this Men's Green Solid Bomber Jacket. The full-zip design and slim fit silhouette add a contemporary edge to your casual wardrobe.",
   },
   {
     id: 18,
@@ -179,6 +213,8 @@ let all_product = [
     image: p18_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Elevate your style with this Men's Green Solid Slim Fit Bomber Jacket. The full-zip design and stylish silhouette make it a versatile and on-trend addition to your wardrobe.",
   },
   {
     id: 19,
@@ -187,6 +223,8 @@ let all_product = [
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Make a fashion statement with this Men's Green Solid Bomber Jacket. The full-zip design and slim fit silhouette add a contemporary touch to your casual ensemble.",
   },
   {
     id: 20,
@@ -195,6 +233,8 @@ let all_product = [
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Step out in style with this Men's Green Solid Slim Fit Bomber Jacket. The full-zip design and slim fit silhouette make it a versatile and modern choice for your casual wardrobe.",
   },
   {
     id: 21,
@@ -203,6 +243,8 @@ let all_product = [
     image: p21_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Upgrade your outerwear collection with this Men's Green Solid Bomber Jacket. The full-zip design and slim fit silhouette add a contemporary edge to your casual look.",
   },
   {
     id: 22,
@@ -211,6 +253,8 @@ let all_product = [
     image: p22_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Achieve a sleek and stylish look with this Men's Green Solid Slim Fit Bomber Jacket. The full-zip design and slim fit silhouette make it a versatile choice for any casual occasion.",
   },
   {
     id: 23,
@@ -219,6 +263,8 @@ let all_product = [
     image: p23_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Elevate your casual style with this Men's Green Solid Bomber Jacket. The full-zip design and slim fit silhouette add a modern touch to your outerwear collection.",
   },
   {
     id: 24,
@@ -227,6 +273,8 @@ let all_product = [
     image: p24_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Make a statement with this Men's Green Solid Slim Fit Bomber Jacket. The full-zip design and slim fit silhouette add a contemporary edge to your casual ensemble.",
   },
   {
     id: 25,
@@ -235,6 +283,8 @@ let all_product = [
     image: p25_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Keep your little one warm and stylish with this Boys' Orange Colourblocked Hooded Sweatshirt. The vibrant color and hooded design make it perfect for playtime adventures.",
   },
   {
     id: 26,
@@ -243,6 +293,8 @@ let all_product = [
     image: p26_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Add a pop of color to your child's wardrobe with this Boys' Orange Colourblocked Hooded Sweatshirt. The hooded design and vibrant color make it a playful and comfortable choice for any day.",
   },
   {
     id: 27,
@@ -251,6 +303,8 @@ let all_product = [
     image: p27_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Keep your little one cozy and stylish with this Boys' Orange Colourblocked Hooded Sweatshirt. The bold color and comfortable design make it perfect for cool weather adventures.",
   },
   {
     id: 28,
@@ -259,6 +313,8 @@ let all_product = [
     image: p28_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Make a statement with this Boys' Orange Colourblocked Hooded Sweatshirt. The vibrant color and hooded design add a playful touch, making it an essential for your child's wardrobe.",
   },
   {
     id: 29,
@@ -267,6 +323,8 @@ let all_product = [
     image: p29_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Elevate your child's casual style with this Boys' Orange Colourblocked Hooded Sweatshirt. The bold color and hooded design make it a trendy and comfortable choice for any occasion.",
   },
   {
     id: 30,
@@ -275,6 +333,8 @@ let all_product = [
     image: p30_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Upgrade your child's wardrobe with this Boys' Orange Colourblocked Hooded Sweatshirt. The vibrant color and hooded design add a playful element, making it perfect for everyday wear.",
   },
   {
     id: 31,
@@ -283,6 +343,8 @@ let all_product = [
     image: p31_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Achieve a stylish and cozy look for your child with this Boys' Orange Colourblocked Hooded Sweatshirt. The vibrant color and hooded design make it a versatile choice for any season.",
   },
   {
     id: 32,
@@ -291,6 +353,8 @@ let all_product = [
     image: p32_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Keep your little one warm and trendy with this Boys' Orange Colourblocked Hooded Sweatshirt. The vibrant color and hooded design add a playful touch to their casual wardrobe.",
   },
   {
     id: 33,
@@ -299,6 +363,8 @@ let all_product = [
     image: p33_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Add a burst of color to your child's ensemble with this Boys' Orange Colourblocked Hooded Sweatshirt. The hooded design and comfortable fit make it a must-have for playtime.",
   },
   {
     id: 34,
@@ -307,6 +373,8 @@ let all_product = [
     image: p34_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Make a statement with this Boys' Orange Colourblocked Hooded Sweatshirt. The vibrant color and hooded design add a playful touch, making it a stylish choice for your little one.",
   },
   {
     id: 35,
@@ -315,6 +383,8 @@ let all_product = [
     image: p35_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Elevate your child's casual look with this Boys' Orange Colourblocked Hooded Sweatshirt. The bold color and hooded design make it a trendy and comfortable choice for any day.",
   },
   {
     id: 36,
@@ -323,6 +393,8 @@ let all_product = [
     image: p36_img,
     new_price: 85.0,
     old_price: 120.5,
+    description:
+      "Upgrade your little one's wardrobe with this Boys' Orange Colourblocked Hooded Sweatshirt. The vibrant color and hooded design add a playful element, perfect for all-day comfort.",
   },
 ];
 
