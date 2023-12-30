@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./Navbar.css";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-
 import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
+
 export const Navbar = () => {
   const [menu, setMenu] = useState("shop");
   return (

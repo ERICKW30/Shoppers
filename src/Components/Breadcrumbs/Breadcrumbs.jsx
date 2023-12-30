@@ -1,7 +1,9 @@
 import "./Breadcrumbs.css";
 import arrow_icon from "../Assets/breadcrum_arrow.png";
 
-const Breadcrumbs = ({ category, name }) => {
+const Breadcrumbs = ({ product }) => {
+  const { category, name } = product;
+
   return (
     <div className="Breadcrumbs">
       HOME <img src={arrow_icon} alt="" /> SHOP <img src={arrow_icon} alt="" />{" "}

@@ -1,0 +1,17 @@
+.product-link {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.product-link img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.product-link div {
+  flex-grow: 1;
+}
