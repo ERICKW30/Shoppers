@@ -13,10 +13,10 @@ const Hero = () => {
             <img id="imageOne" src={hand_icon} alt=" " />
           </div>
           <p>Collections</p>
-          <p>YA KILA MTU</p>
+          <p>FOr Everyone</p>
         </div>
         <div className="hero-latest-btn">
-          <div>ZENYE ZIMELANDI JANA</div>
+          <div>New Arrivals</div>
           <img src={arrow_icon} alt="" />
         </div>
       </div>
