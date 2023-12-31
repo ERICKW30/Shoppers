@@ -20,8 +20,11 @@
   align-items: center;
   list-style: none;
   gap: 50px;
-  color: rgb(39, 43, 43);
   font-weight: 500;
+  font-style: oblique;
+  font-size: 0.5cm;
+  color: #000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .nav-menu li {
@@ -37,7 +40,7 @@
   width: 80%;
   height: 4px;
   border-radius: 10px;
-  background-color: #e20f0f;
+  background-color: #33ff00;
 }
 
 .nav-login-cart {
@@ -61,8 +64,8 @@
   margin-left: 13px;
   border-radius: 11px;
   font-size: 14px;
-  background: #f73504;
-  color: rgb(6, 19, 2);
+  background: #658d08;
+  color: rgb(249, 252, 248);
 }
 #btn-warn {
   font-family: "Courier New", Courier, monospace;

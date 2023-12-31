@@ -22,17 +22,30 @@ export const Navbar = () => {
             setMenu("shop");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/">
+          <Link
+            style={{
+              textDecoration: "none",
+              color: menu === "shop" ? "black" : "black",
+            }}
+            to="/"
+          >
             Shop
           </Link>
           {menu === "shop" ? <hr /> : <></>}
         </li>
+
         <li
           onClick={() => {
             setMenu("mens");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/mens">
+          <Link
+            style={{
+              textDecoration: "none",
+              color: menu === "mens" ? "purple" : "black",
+            }}
+            to="/mens"
+          >
             Men
           </Link>
           {menu === "mens" ? <hr /> : <></>}
@@ -42,7 +55,13 @@ export const Navbar = () => {
             setMenu("womens");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/womens">
+          <Link
+            style={{
+              textDecoration: "none",
+              color: menu === "womens" ? "orange" : "black",
+            }}
+            to="/womens"
+          >
             Women
           </Link>
           {menu === "womens" ? <hr /> : <></>}
@@ -52,7 +71,13 @@ export const Navbar = () => {
             setMenu("kids");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/kids">
+          <Link
+            style={{
+              textDecoration: "none",
+              color: menu === "kids" ? "blue" : "black",
+            }}
+            to="/kids"
+          >
             Kids
           </Link>
           {menu === "kids" ? <hr /> : <></>}
@@ -60,9 +85,9 @@ export const Navbar = () => {
       </ul>
       <div className="nav-login-cart">
         <Link to="/login">
-          <Button id="btn-warn" variant="outline-warning">
+          <Button id="btn-warn" variant="outline-success">
             LOGIN
-          </Button>{" "}
+          </Button>
         </Link>
         <Link to="/cart">
           <div className="nav-cart-count">{getTotalCartItems()}</div>
