@@ -1,7 +1,7 @@
 .shopcategory-banner {
   display: block;
   margin: 30px auto;
-  width: 82%;
+  width: 100%;
 }
 .shopcategory-indexSort {
   display: flex;
@@ -21,10 +21,10 @@
   font-weight: 500;
 }
 .shopcategory-products {
-  margin: 20px 170px;
+  margin: 20px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 80;
+  row-gap: 10px;
   justify-self: space-between;
 }
 .item {
@@ -37,16 +37,16 @@
   justify-content: center;
   align-items: center;
   margin: 150px;
-  margin-left: 750px;
+  margin-left: 650px;
   width: 233px;
-  height: 69px;
+  height: 65px;
   border-radius: 75px;
-  background: rgb(102, 98, 90);
-  color: rgb(233, 248, 16);
+  background: rgb(114, 245, 6);
+  color: rgb(10, 10, 10);
   font-size: 0.7cm;
   font-weight: 500;
 }
 .shopcategory-loadmore:hover {
-  color: rgb(15, 17, 17);
-  background-color: rgb(199, 137, 56);
+  color: rgb(250, 252, 252);
+  background-color: rgb(45, 129, 12);
 }

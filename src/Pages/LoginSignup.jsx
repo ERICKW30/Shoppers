@@ -1,23 +1,30 @@
+// Import the necessary dependencies
+import React from "react";
 import "./CSS/LoginSignup.css";
 import Button from "react-bootstrap/Button";
+
+// Define the LoginSignup component
 const LoginSignup = () => {
   return (
     <div className="loginsignup">
       <div className="loginSignup-container">
-        <h1>SIgn Up</h1>
-        <div className="loginsig nup-fields">
-          <input type="text" placeholder="Jina Lako" />
+        <h1>Sign Up</h1>
+        <div className="loginsignup-fields">
+          <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Email Address" />
           <input type="password" placeholder="Password" />
         </div>
-        <Button variant="warning">Endelea</Button>
-        <p className="loginsignup-login">
-          Uko na account Jamaa? <span>Login hapa</span>
-        </p>
         <div className="loginsignup-agree">
-          <input type="checkbox" name="" id="" />
-          <p>Kwa kuendelea, unakubaliana na Terms of use and privacy policy</p>
+          <input type="checkbox" id="agreeCheckbox" />
+          <label htmlFor="agreeCheckbox">
+            By continuing, you agree to our Terms of use and privacy policy
+          </label>
+          <Button variant="warning">Continue</Button>
         </div>
+        <p className="loginsignup-login">
+          Do you have an account?
+          <Button variant="success">Login here</Button>
+        </p>
       </div>
     </div>
   );

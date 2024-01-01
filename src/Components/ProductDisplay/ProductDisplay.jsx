@@ -3,6 +3,7 @@ import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
 import { useContext } from "react";
 import { ShopContext } from "../../Context/ShopContext";
+import { Button } from "react-bootstrap";
 
 const ProductDisplay = ({ product }) => {
   const { addToCart } = useContext(ShopContext);
@@ -48,18 +49,19 @@ const ProductDisplay = ({ product }) => {
             <div>XXL</div>
           </div>
         </div>
-        <button
+        <Button
+          variant="success"
           onClick={() => {
             addToCart(product.id);
           }}
         >
           Add to cart
-        </button>
+        </Button>
         <p className="productdisplay-right-category">
-          <span>Category :</span>Woman , T-shirt, Crop top
+          <span>Category : </span>Woman , T-shirt, Crop top
         </p>
         <p className="productdisplay-right-category">
-          <span>Tags :</span>Morden , Latest
+          <span>Tags : </span>Morden , Latest
         </p>
       </div>
     </div>
