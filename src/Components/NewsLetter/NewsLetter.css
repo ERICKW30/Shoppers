@@ -3,13 +3,7 @@
   padding-left: 20px;
   padding: 40px;
   line-height: 220px;
-  background: linear-gradient(180deg, #fafafa 10%, #be22be 60%);
-}
-.mb-3 {
-  width: 50%;
-  display: flex;
-  margin-left: 350px;
-  border-radius: 10px;
+  background: linear-gradient(90deg, #ebdc0f 10%, #86f365 70%);
 }
 
 .newsletter p {
@@ -21,20 +15,31 @@
 }
 
 .newsletter h1 {
-  color: rgb(11, 147, 172);
+  color: rgb(16, 26, 13);
   font-size: 1.3cm;
   font-weight: 600;
-  margin-left: 250px;
+  margin-left: 150px;
 }
 .btn-letter {
-  border-radius: 30px;
-  padding: 7%;
-  width: 150px;
-  color: #fcfafa;
+  border-radius: 20px;
+  margin-left: 570px;
+  margin-top: 50px;
+  width: 195px;
+  height: 70px;
+  color: #fdfafa;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: black;
 }
 .btn:hover {
-  background-color: #0af2fa;
+  background-color: #e9a718;
+}
+.form-control {
+  width: 50%;
+  height: 200px;
+  margin-left: 350px;
+  border-radius: 15px;
+  font-size: 0.6cm;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
 }
