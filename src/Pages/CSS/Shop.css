@@ -55,3 +55,9 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.shop-container {
+  max-width: 100%; /* Set your desired max-width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding as needed */
+  /* Add any other styles you need */
+}

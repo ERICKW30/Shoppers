@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../Context/ShopContext";
 import Hero from "../Components/Hero/Hero";
@@ -16,8 +16,6 @@ const Shop = () => {
   );
 
   const handleMoreButtonClick = () => {
-    // Implement your logic to display more products here
-    // For example, you can display the next 10 products
     const nextProducts = all_product.slice(
       displayedProducts.length,
       displayedProducts.length + 10
@@ -26,7 +24,7 @@ const Shop = () => {
   };
 
   return (
-    <div>
+    <div className="shop-container">
       <Hero />
       <Popular />
       <Offers />
@@ -46,7 +44,7 @@ const Shop = () => {
             </div>
           ))}
         </div>
-        {all_product.length > 5 &&
+        {all_product.length > 10 &&
           displayedProducts.length < all_product.length && (
             <button className="more-button" onClick={handleMoreButtonClick}>
               More
