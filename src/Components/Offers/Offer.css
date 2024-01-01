@@ -2,47 +2,49 @@
   width: 65%;
   height: 100xp;
   display: flex;
-  margin: auto;
+  margin: 10%;
   padding: 10px 90px;
-  margin-top: 150px;
-  background: linear-gradient(180deg, #fc913f 38%, #f59506 5%);
+  margin-top: 230px;
+  background: linear-gradient(180deg, #8df506 70%, #ffef0c 100%);
 }
 
 .offers-left {
-  flex: 1;
   display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   flex-direction: column;
 }
 
 .offers-left h1 {
   color: #171717;
-  font-size: 80px;
+  font-size: 2cm;
   font-weight: 600;
-  padding: 10px;
+  padding: 2px;
+  margin-top: 30px;
 }
 
 .offers-left p {
-  color: #171717;
-  font-size: 22px;
+  color: #6d5a5a;
+  font-size: 1cm;
+  margin-top: 90px;
   font-weight: 600;
 }
 
 .offers-left button {
-  width: 280px;
-  height: 70px;
+  width: 250px;
+  height: 50px;
   border-radius: 30px;
   border: none;
-  background: #ec0909;
-  color: white;
-  font-size: 1.2cm;
+  background: #d85c09;
+  color: rgb(255, 255, 255);
+  font-size: 0.6cm;
   font-weight: 500;
+  margin-left: 250px;
   margin-top: 30px;
   cursor: pointer;
 }
 .offers-right {
-  flex: 1;
   display: flex;
   align-items: center;
-  justify-content: 50px;
-  padding-top: 50px;
+  margin-top: 200px;
+  margin-left: 280px;
 }

@@ -1,87 +1,45 @@
 import { useContext, useState } from "react";
-import "./Navbar.css";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import logo from "../Assets/logo.png";
-import cart_icon from "../Assets/cart_icon.png";
+import Button from "react-bootstrap/Button";
 import { ShopContext } from "../../Context/ShopContext";
+import logo from "../Assets/logo.png";
+import cartIcon from "../Assets/cart_icon.png";
+import "./Navbar.css";
 
-export const Navbar = () => {
+const Navbar = () => {
   const [menu, setMenu] = useState("shop");
   const { getTotalCartItems } = useContext(ShopContext);
+
+  const handleMenuClick = (menuItem) => {
+    setMenu(menuItem);
+  };
+
+  const renderMenuLink = (menuItem, label, color) => (
+    <li onClick={() => handleMenuClick(menuItem)}>
+      <Link
+        to={`/${menuItem}`}
+        style={{
+          textDecoration: "none",
+          color: menu === menuItem ? color : "black",
+        }}
+      >
+        {label}
+      </Link>
+      {menu === menuItem ? <hr /> : null}
+    </li>
+  );
 
   return (
     <div className="navbar">
       <div className="nav-logo">
-        <img src={logo} alt="" />
+        <img src={logo} alt="Shopper Logo" />
         <p>SHOPPER</p>
       </div>
       <ul className="nav-menu">
-        <li
-          onClick={() => {
-            setMenu("shop");
-          }}
-        >
-          <Link
-            style={{
-              textDecoration: "none",
-              color: menu === "shop" ? "black" : "black",
-            }}
-            to="/"
-          >
-            Shop
-          </Link>
-          {menu === "shop" ? <hr /> : <></>}
-        </li>
-
-        <li
-          onClick={() => {
-            setMenu("mens");
-          }}
-        >
-          <Link
-            style={{
-              textDecoration: "none",
-              color: menu === "mens" ? "purple" : "black",
-            }}
-            to="/mens"
-          >
-            Men
-          </Link>
-          {menu === "mens" ? <hr /> : <></>}
-        </li>
-        <li
-          onClick={() => {
-            setMenu("womens");
-          }}
-        >
-          <Link
-            style={{
-              textDecoration: "none",
-              color: menu === "womens" ? "orange" : "black",
-            }}
-            to="/womens"
-          >
-            Women
-          </Link>
-          {menu === "womens" ? <hr /> : <></>}
-        </li>
-        <li
-          onClick={() => {
-            setMenu("kids");
-          }}
-        >
-          <Link
-            style={{
-              textDecoration: "none",
-              color: menu === "kids" ? "blue" : "black",
-            }}
-            to="/kids"
-          >
-            Kids
-          </Link>
-          {menu === "kids" ? <hr /> : <></>}
-        </li>
+        {renderMenuLink("", "Shop", "black")}
+        {renderMenuLink("mens", "Men", "purple")}
+        {renderMenuLink("womens", "Women", "orange")}
+        {renderMenuLink("kids", "Kids", "blue")}
       </ul>
       <div className="nav-login-cart">
         <Link to="/login">
@@ -91,7 +49,7 @@ export const Navbar = () => {
         </Link>
         <Link to="/cart">
           <div className="nav-cart-count">{getTotalCartItems()}</div>
-          <img src={cart_icon} alt="" />
+          <img src={cartIcon} alt="Cart Icon" />
         </Link>
       </div>
     </div>
