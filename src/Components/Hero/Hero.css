@@ -1,5 +1,6 @@
-.hero {
-  height: 100vh;
+/* Adjusted CSS for the new structure */
+.container {
+  height: 100px;
   background: linear-gradient(180deg, #15a110 10%, #8ef706 60%);
   display: flex;
 }
@@ -13,7 +14,8 @@
   padding-left: 120px;
   line-height: 1.2;
 }
-.hero-left h2 {
+
+.mt-4-font-weight-bold {
   color: rgb(252, 235, 8);
   font-size: 1.5cm;
   font-weight: 600;
@@ -41,25 +43,10 @@
   margin-top: 15px;
 }
 
-.hero-latest-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  width: 300px;
-  height: 50px;
-  border-radius: 75px;
-  margin-top: 30px;
-  background: #08860e;
-  color: #ffffff;
-  font-size: 0.6cm;
-  font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
-}
 .hero-hand-icon {
   width: 80px;
   display: flex;
-  margin-right: 100px;
+  margin-right: 10px;
 }
 
 .hero-left p:nth-child(2) {
@@ -68,10 +55,19 @@
 }
 
 .hero-left p:nth-child(3) {
-  font-size: 1.7cm;
+  font-size: 1cm;
   color: #0d0f0d;
 }
+
 #imageOne {
-  width: 100px;
+  width: 10px;
   margin-left: 40px;
+}
+
+#hero-image {
+  width: 40px;
+  height: 30px;
+}
+.btn-primary {
+  margin: 20px;
 }
