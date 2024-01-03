@@ -7,6 +7,7 @@ import Offers from "../Components/Offers/Offers";
 import NewCollections from "../Components/NewCollections/NewCollections";
 import NewsLetter from "../Components/NewsLetter/NewsLetter";
 import LoginSignup from "./LoginSignup";
+import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import "./CSS/Shop.css";
 
 const Shop = () => {
@@ -24,37 +25,42 @@ const Shop = () => {
   };
 
   return (
-    <div className="shop-container">
+    <Container className="shop-container">
       <Hero />
       <Popular />
       <Offers />
       <NewCollections />
 
-      <div className="featured">
-        <h2>Featured Products</h2>
-        <div className="product-list">
-          {displayedProducts.map((product) => (
-            <div key={product.id} className="product-item">
-              <Link to={`/product/${product.id}`}>
-                <img src={product.image} alt={product.name} />
-                <h3>{product.name}</h3>
-                <p>${product.price}</p>
-                <p>{product.description}</p>
-              </Link>
-            </div>
-          ))}
-        </div>
-        {all_product.length > 10 &&
-          displayedProducts.length < all_product.length && (
-            <button className="more-button" onClick={handleMoreButtonClick}>
-              More
-            </button>
-          )}
-      </div>
+      <h2 className="text-center text-success mt-4">Featured Products</h2>
+      <Row>
+        {displayedProducts.map((product) => (
+          <Col key={product.id} xs={12} sm={6} md={4} lg={3} className="mb-4">
+            <Link
+              to={`/product/${product.id}`}
+              className="product-item text-dark"
+            >
+              <Image src={product.image} alt={product.name} fluid />
+              <h3 className="mt-3">{product.name}</h3>
+              <p>Ksh {product.price}</p>
+              <p>{product.description}</p>
+            </Link>
+          </Col>
+        ))}
+      </Row>
+      {all_product.length > 10 &&
+        displayedProducts.length < all_product.length && (
+          <Button
+            variant="success"
+            className="more-button mt-4"
+            onClick={handleMoreButtonClick}
+          >
+            More
+          </Button>
+        )}
 
       <NewsLetter />
       <LoginSignup />
-    </div>
+    </Container>
   );
 };
 
