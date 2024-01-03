@@ -41,7 +41,7 @@ const Shop = () => {
             >
               <Image src={product.image} alt={product.name} fluid />
               <h3 className="mt-3">{product.name}</h3>
-              <p>Ksh {product.price}</p>
+              <p>Ksh.{product.price}</p>
               <p>{product.description}</p>
             </Link>
           </Col>
