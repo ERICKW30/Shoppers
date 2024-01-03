@@ -52,6 +52,11 @@ const Shop = () => {
           <Button
             variant="success"
             className="more-button mt-4"
+            style={{
+              marginLeft: "55px",
+              fontFamily: "fantasy",
+              fontSize: ".5cm",
+            }}
             onClick={handleMoreButtonClick}
           >
             More
