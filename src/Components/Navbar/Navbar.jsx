@@ -13,7 +13,7 @@ const CustomNavbar = () => {
 
   const handleMenuClick = (menuItem) => {
     setMenu(menuItem);
-    setExpanded(false); // Close the navbar after clicking a link
+    setExpanded(false);
   };
 
   const renderMenuLink = (menuItem, label, color) => (
@@ -30,7 +30,7 @@ const CustomNavbar = () => {
   );
 
   return (
-    <Navbar bg="warning" expand="lg" variant="light">
+    <Navbar bg="success" expand="lg" variant="light">
       <Container>
         <Navbar.Brand className="d-flex align-items-center">
           <Image src={logo} alt="Shopper Logo" style={{ width: "70px" }} />
