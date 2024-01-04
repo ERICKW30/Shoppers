@@ -1,9 +1,7 @@
-// App.jsx
-
-import Navbar from "./Components/Navbar/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import Navbar from "./Components/Navbar/Navbar";
 import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
 import Product from "./Pages/Product";
@@ -37,7 +35,7 @@ function App() {
             <Route path="/product/:productId" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/loginSignup" element={<LoginSignup />} />
-            <Route exact path="/" element={<Shop />} />
+            <Route path="/" element={<Shop />} />
           </Routes>
         </Container>
 
