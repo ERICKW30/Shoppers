@@ -15,12 +15,12 @@ const NewCollections = () => {
         sm={2}
         md={4}
         lg={4}
-        className="collections "
+        className="collections"
         style={{ marginTop: "30px" }}
       >
         {new_collection.map((item, i) => (
-          <Col key={i} className="text-center">
-            <div className="card">
+          <Col key={i} className="text-center mb-2 ">
+            <div className="card ">
               <Item
                 id={item.id}
                 name={item.name}
