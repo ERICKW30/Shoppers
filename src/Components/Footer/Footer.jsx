@@ -1,6 +1,4 @@
-// Import the necessary dependencies
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import "./Footer.css";
 import footer_logo from "../Assets/logo_big.png";
 import instagram_icon from "../Assets/instagram_icon.png";
@@ -9,38 +7,39 @@ import whatsapp_icon from "../Assets/whatsapp_icon.png";
 
 const Footer = () => {
   return (
-    <Container className="footer">
+    <Container className="footer mt-5">
       <Row className="footer-logo">
-        <Col xs={12} sm={4} className="d-flex align-items-center gap-3">
-          <img src={footer_logo} alt="" />
-          <p className="text-warning">SHOPPER</p>
+        <Col xs={12} sm={4} className="d-flex align-items-center ">
+          <Image className="fluid" src={footer_logo} alt="Logo" />
+          <p className="text-success">SHOPPER</p>
         </Col>
       </Row>
       <Row className="foot-links">
-        <Col xs={12} sm={8} className="d-flex justify-content-around">
-          <ul className="list-unstyled">Offices</ul>
-          <ul className="list-unstyled">Products</ul>
-          <ul className="list-unstyled">About</ul>
-          <ul className="list-unstyled">Company</ul>
-          <ul className="list-unstyled">Contact</ul>
+        <Col xs={12} sm={8} className="h4 justify-content-around">
+          <li className="list-unstyled">Offices</li>
+          <li className="list-unstyled">Products</li>
+          <li className="list-unstyled">About</li>
+          <li className="list-unstyled">Company</li>
+          <li className="list-unstyled">Contact</li>
         </Col>
       </Row>
       <Row className="footer-social-icon">
         <Col xs={12} className="d-flex gap-3">
           <div className="footer-icons-container">
-            <img src={instagram_icon} alt="" />
+            <Image className="fluid" src={instagram_icon} alt="Instagram" />
           </div>
           <div className="footer-icons-container">
-            <img src={pintester_icon} alt="" />
+            <Image className="fluid" src={pintester_icon} alt="Pinterest" />
           </div>
           <div className="footer-icons-container">
-            <img src={whatsapp_icon} alt="" />
+            <Image className="fluid" src={whatsapp_icon} alt="WhatsApp" />
           </div>
         </Col>
       </Row>
       <Row className="footer-copyright">
-        <hr className="w-80" />
-        <p className="text-dark">Copyright @ 2023 - All Rights Reserved</p>
+        <h5 className="text-dark text-center">
+          Copyright @ 2024 - All Rights Reserved.
+        </h5>
       </Row>
     </Container>
   );

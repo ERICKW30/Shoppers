@@ -4,8 +4,8 @@ import { Form, Button } from "react-bootstrap";
 
 const NewsLetter = () => {
   return (
-    <div className="newsletter bg-gradient">
-      <h2 className="text-dark" style={{ fontFamily: "cursive" }}>
+    <div className="newsletter bg-gradient mt-4">
+      <h2 className="text-dark" style={{ fontFamily: "fantasy" }}>
         GET EXCLUSIVE OFFERS ON OUR SITE.
       </h2>
       <h3 className="text-dark mt-4">
@@ -25,7 +25,7 @@ const NewsLetter = () => {
             className="btn-letter"
             style={{
               alignItems: "center",
-              marginLeft: "50px",
+              marginLeft: "90px",
               fontFamily: "fantasy",
             }}
           >

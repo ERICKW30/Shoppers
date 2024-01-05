@@ -6,7 +6,7 @@ import "./CSS/LoginSignup.css";
 // Define the LoginSignup component
 const LoginSignup = () => {
   return (
-    <div className="loginsignup container">
+    <div className="loginsignup container mt-5">
       <div className="loginSignup-container">
         <h1
           className="text-uppercase"
@@ -46,7 +46,7 @@ const LoginSignup = () => {
           </Button>
         </Form>
 
-        <h3 className="loginsignup-login">
+        <h3 className="loginsignup-login mt-4">
           Do you have an account?
           <Button
             variant="success mt-5"

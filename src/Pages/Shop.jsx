@@ -7,8 +7,7 @@ import Offers from "../Components/Offers/Offers";
 import NewCollections from "../Components/NewCollections/NewCollections";
 import NewsLetter from "../Components/NewsLetter/NewsLetter";
 import LoginSignup from "./LoginSignup";
-import { Container, Row, Col, Button, Image } from "react-bootstrap";
-import "./CSS/Shop.css";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
 
 const Shop = () => {
   const { all_product } = useContext(ShopContext);
@@ -31,19 +30,35 @@ const Shop = () => {
       <Offers />
       <NewCollections />
 
-      <h2 className="text-center text-success mt-4">Featured Products</h2>
+      <div className="text-center text-success mt-4 h2">Featured Products</div>
       <Row>
         {displayedProducts.map((product) => (
-          <Col key={product.id} xs={12} sm={6} md={4} lg={3} className="mb-4">
-            <Link
-              to={`/product/${product.id}`}
-              className="product-item text-dark"
-            >
-              <Image src={product.image} alt={product.name} fluid />
-              <h3 className="mt-3">{product.name}</h3>
-              <p>Ksh.{product.price}</p>
-              <p>{product.description}</p>
-            </Link>
+          <Col key={product.id} xs={12} sm={6} md={4} lg={3} className="mt-4">
+            <Card>
+              <Card.Img variant="top" src={product.image} alt={product.name} />
+              <Card.Body style={{ height: "260px" }}>
+                <Link to={`/product/${product.id}`} className="text-dark">
+                  <Card.Title>{product.name}</Card.Title>
+                </Link>
+                <Card.Text
+                  style={{ overflow: "hidden", textOverflow: "ellipsis" }}
+                >
+                  <div className="d-flex" style={{ gap: "30px" }}>
+                    <h4 className="text-danger">Ksh.{product.old_price}</h4>
+                    <h4 className="text-success">Ksh.{product.new_price}</h4>
+                  </div>
+                  <p
+                    style={{
+                      maxHeight: "100px",
+                      overflow: "scroll",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    {product.description}
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
         ))}
       </Row>
@@ -53,7 +68,7 @@ const Shop = () => {
             variant="success"
             className="more-button mt-4"
             style={{
-              marginLeft: "55px",
+              margin: "10px 120px",
               fontFamily: "fantasy",
               fontSize: ".5cm",
             }}
