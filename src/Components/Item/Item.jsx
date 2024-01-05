@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
+import { useContext } from "react";
+import { ShopContext } from "../../Context/ShopContext";
 
 const Item = ({ id, image, name, new_price, old_price }) => {
+  const { addToCart } = useContext(ShopContext);
+
   return (
-    <Card className="item-card " style={{ width: "100%" }}>
+    <Card className="item-card" style={{ width: "100%" }}>
       <Link to={`/product/${id}`}>
         <Card.Img variant="top" src={image} alt={name} className="img-fluid" />
       </Link>
@@ -15,10 +19,14 @@ const Item = ({ id, image, name, new_price, old_price }) => {
         </div>
         <Button
           variant="success"
-          className="mt-auto btn-block btn-sm"
-          onClick={() => alert(`Add to Cart: ${name}`)}
+          style={{ width: "100%" }}
+          block
+          onClick={() => {
+            addToCart(id); // Fixed typo here
+          }}
+          className="mt-3"
         >
-          Add to Cart
+          Add to cart
         </Button>
       </Card.Body>
     </Card>

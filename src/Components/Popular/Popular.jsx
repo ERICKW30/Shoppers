@@ -1,48 +1,47 @@
 import React from "react";
-import data_product from "../Assets/data";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "./Popular.css";
+import { useContext } from "react";
+import { ShopContext } from "../../Context/ShopContext";
+import data_product from "../Assets/data";
 
 const Popular = () => {
+  const { addToCart } = useContext(ShopContext);
+
   return (
     <Container className="popular">
-      <h2
-        style={{
-          marginTop: "30px",
-          textAlign: "center",
-          fontWeight: "bold",
-          color: "green",
-        }}
-      >
+      <h2 className="text-center font-weight-bold text-success mt-3">
         POPULAR AMONG LADIES
       </h2>
       <hr className="mb-3" />
       <Row
-        className="popular-item"
-        style={{ overflowY: "auto", maxHeight: "400px" }}
+        className="popular-item overflow-auto"
+        style={{ maxHeight: "400px" }}
       >
         {data_product.map((item, i) => (
-          <Col key={i} xs={12} sm={6} md={3} lg={3} className="mb-2">
+          <Col key={i} xs={12} sm={6} md={4} lg={3} className="mb-3">
             <Card>
               <Card.Img variant="top" src={item.image} />
               <Card.Body>
                 <Card.Title className="text-center">{item.name}</Card.Title>
-                <Card.Text>
-                  <div
-                    className="price"
-                    style={{ marginLeft: "20px", marginTop: "10px" }}
-                  >
+                <Card.Text className="text-center">
+                  <div className="price">
                     <span className="text-danger">Ksh.{item.old_price}</span>{" "}
-                    <span
-                      className="text-success font-weight-bold"
-                      style={{ marginLeft: "40px" }}
-                    >
+                    <span className="text-success font-weight-bold">
                       Ksh.{item.new_price}
                     </span>
                   </div>
                 </Card.Text>
-                <Button className="btn-block" variant="success mt-3 mb-3">
-                  Buy Now
+                <Button
+                  variant="success"
+                  style={{ width: "100%" }}
+                  block
+                  onClick={() => {
+                    addToCart(item.id);
+                  }}
+                  className="mt-3"
+                >
+                  Add to cart
                 </Button>
               </Card.Body>
             </Card>

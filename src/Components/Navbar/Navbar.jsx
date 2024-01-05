@@ -68,7 +68,7 @@ const CustomNavbar = () => {
             {renderMenuLink("kids", "Kids")}
           </Nav>
         </Navbar.Collapse>
-        <div className="d-flex align-items-center">
+        <div className="d-flex align-items-center mt-3 gap-5">
           <Link to="/login">
             <Button
               variant="outline-success"
@@ -76,7 +76,7 @@ const CustomNavbar = () => {
                 fontSize: "0.5cm",
                 width: "100px",
                 height: "40px",
-                marginLeft: "50px",
+                marginLeft: "5px",
                 marginTop: "20px",
                 background: " hsl(108, 60%, 50%)",
                 color: "#fff",
@@ -90,19 +90,15 @@ const CustomNavbar = () => {
             to="/cart"
             className="position-flex"
             style={{
-              color: " hsl(10, 100%, 50%)",
+              color: " hsl(10%, 10%, 50%)",
               fontSize: ".5cm",
               fontWeight: "bold",
-              marginLeft: "140px",
-              marginBottom: "46px",
+              marginLeft: "10px",
+              marginBottom: "10px",
             }}
           >
             <div className="nav-cart-count">{getTotalCartItems()}</div>
-            <img
-              src={cartIcon}
-              alt="Cart Icon"
-              style={{ width: "34px", marginRight: "10px" }}
-            />
+            <img src={cartIcon} alt="Cart Icon" style={{ width: "34px" }} />
           </Link>
         </div>
       </Container>

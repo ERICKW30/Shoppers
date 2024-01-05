@@ -10,14 +10,12 @@ const Offers = () => {
           md={6}
           className="d-flex flex-column justify-content-center align-items-center text-center"
         >
-          <h1 className="text-dark font-weight-bold">EXCLUSIVE</h1>
-          <h1 className="text-dark font-weight-bold">CRAZY OFFERS</h1>
-          <p className="text-secondary font-weight-bold">
+          <h1 className="text-dark font-weight-bold ">EXCLUSIVE</h1>
+          <h1 className="text-dark font-weight-bold mt-4">CRAZY OFFERS</h1>
+          <p className="text-secondary font-weight-bold mt-4">
             BEST OFFERS BY SELLERS
           </p>
-          <Button className="btn-success" style={{ marginRight: "150px" }}>
-            TAKE A LOOK
-          </Button>
+          <Button className="btn-success mt-5">TAKE A LOOK</Button>
         </Col>
         <Col
           xs={12}
