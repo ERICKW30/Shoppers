@@ -12,13 +12,10 @@ const ProductDisplay = ({ product }) => {
       <Col sm={2} md={6} lg={6} xl={6}>
         <div className="d-flex flex-column gap-1 overflow-auto mt-5">
           <Image src={product.image} alt="" className="mb-3" />
-          <Image src={product.image} alt="" className="mb-3" />
-          <Image src={product.image} alt="" className="mb-3" />
-          <Image src={product.image} alt="" className="mb-2" />
         </div>
       </Col>
 
-      <Col sm={1} md={6}>
+      <Col xs={1} sm={1} md={6}>
         <div>
           <h1>{product.name}</h1>
           <div className="d-flex align-items-center gap-2 mt-5">
@@ -30,7 +27,7 @@ const ProductDisplay = ({ product }) => {
             <p>177</p>
           </div>
           <div
-            className="d-flex mt-4 col-sm-12"
+            className="d-flex mt-4"
             style={{ fontSize: ".8cm", gap: "45px" }}
           >
             <div className="text-decoration-line-through text-danger">

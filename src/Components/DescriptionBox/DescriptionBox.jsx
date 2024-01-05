@@ -1,13 +1,33 @@
+import { Button, Col, Row } from "react-bootstrap";
 import "./DescriptionBox.css";
 
 const DescriptionBox = ({ product }) => {
   return (
-    <div className="descriptionbox">
-      <div className="descriptionbox-navigator">
-        <div className="descriptionbox-nav-box">Description</div>
-        <div className="descriptionbox-nav-box-fade">Reviews (107)</div>
+    <div className="container descriptionbox ">
+      <Row className="descriptionbox-navigator ">
+        <Col>
+          <Button
+            variant="outline-success"
+            className="descriptionbox-nav-button"
+          >
+            Description
+          </Button>
+        </Col>
+        <Col>
+          <Button
+            variant="outline-secondary"
+            className="descriptionbox-nav-button"
+          >
+            Reviews (107)
+          </Button>
+        </Col>
+      </Row>
+      <div
+        className="descriptionbox-description mt-5 h6"
+        style={{ borderRadius: "10px" }}
+      >
+        {product.description}
       </div>
-      <div className="descriptionbox-description">{product.description}</div>
     </div>
   );
 };

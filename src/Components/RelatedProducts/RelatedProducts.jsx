@@ -7,7 +7,10 @@ const RelatedProducts = () => {
   return (
     <Container className="related-products-container text-center">
       <h1 className="mb-4">Related Products</h1>
-      <hr className="separator" style={{ marginLeft: "35px" }} />
+      <hr
+        className="separator"
+        style={{ margin: "0 auto", marginBottom: "40px" }}
+      />
       <Row className="related-products-list">
         {data_product.map((item, i) => (
           <Col key={i} xs={12} md={6} lg={3} className="mb-3">
