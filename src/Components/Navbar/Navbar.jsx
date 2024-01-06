@@ -97,7 +97,12 @@ const CustomNavbar = () => {
               marginBottom: "10px",
             }}
           >
-            <div className="nav-cart-count">{getTotalCartItems()}</div>
+            <div
+              className="nav-cart-count bg-warning text-black rounded-circle p-1"
+              style={{ marginLeft: "10px" }}
+            >
+              {getTotalCartItems()}
+            </div>
             <img src={cartIcon} alt="Cart Icon" style={{ width: "34px" }} />
           </Link>
         </div>
