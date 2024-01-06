@@ -91,7 +91,7 @@ const CartsItems = () => {
               className="form-control "
               placeholder="Promo code"
             />
-            <button className="btn btn-dark ml-2">Submit</button>
+            <button className="btn btn-dark ml-2 ">Submit</button>
           </div>
         </div>
       </div>

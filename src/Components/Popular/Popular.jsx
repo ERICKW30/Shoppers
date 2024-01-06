@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "./Popular.css";
 import { useContext } from "react";
@@ -10,10 +9,10 @@ const Popular = () => {
 
   return (
     <Container className="popular">
-      <h2 className="text-center font-weight-bold text-success mt-3">
+      <h2 className="text-center h2 font-weight-bold text-success mt-5">
         POPULAR AMONG LADIES
       </h2>
-      <hr className="mb-3" />
+      <hr className="mb-3 color-success w-25 " />
       <Row
         className="popular-item overflow-auto"
         style={{ maxHeight: "400px" }}

@@ -10,10 +10,9 @@ import { Button, Card } from "react-bootstrap";
 const Hero = () => {
   return (
     <Container
-      className="bg-secondary text-light p-2"
+      className="bg-success text-light p-2"
       style={{
         marginTop: "50px",
-        background: "linear-gradient(180deg, #15a110 10%, #8ef706 60%)",
       }}
     >
       <Row>

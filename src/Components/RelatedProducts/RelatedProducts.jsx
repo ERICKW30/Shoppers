@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "./RelatedProducts.css";
+
 import data_product from "../Assets/data";
 import Item from "../Item/Item";
 
