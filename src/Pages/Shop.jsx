@@ -31,6 +31,10 @@ const Shop = () => {
       <NewCollections />
 
       <div className="text-center text-success mt-4 h2">Featured Products</div>
+      <hr
+        className="bg-dark w-25"
+        style={{ marginLeft: "auto", marginRight: "auto" }}
+      />
       <Row>
         {displayedProducts.map((product) => (
           <Col key={product.id} xs={12} sm={6} md={4} lg={3} className="mt-4">
