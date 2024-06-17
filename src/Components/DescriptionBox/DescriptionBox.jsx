@@ -1,6 +1,7 @@
 import { Button, Col, Row } from "react-bootstrap";
 import "./DescriptionBox.css";
 
+//
 const DescriptionBox = ({ product }) => {
   return (
     <div className="container descriptionbox ">

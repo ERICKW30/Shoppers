@@ -12,7 +12,7 @@ const RelatedProducts = () => {
       />
       <Row className="related-products-list">
         {data_product.map((item, i) => (
-          <Col key={i} xs={12} md={6} lg={3} className="mb-3">
+          <Col key={i} xs={12} md={6} lg={3} className="mb-4">
             <Item
               id={item.id}
               name={item.name}

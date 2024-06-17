@@ -43,7 +43,7 @@ const Hero = () => {
                   alt=" "
                 />
               </div>
-              <h3 className="mt-5 font-weight-bold">Collections</h3>
+              <h3 className="mt-5 font-weight-bold">Collection</h3>
               <h3 className="mt-5 font-weight-bold">For Everyone</h3>
             </div>
             <div className="hero-latest-btn">

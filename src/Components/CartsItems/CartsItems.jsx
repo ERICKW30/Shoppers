@@ -8,6 +8,7 @@ const CartsItems = () => {
   const { getTotalCartAmount, all_product, cartItems, removeFromCart } =
     useContext(ShopContext);
 
+    //
   return (
     <div className="container mt-4">
       <div className="row">

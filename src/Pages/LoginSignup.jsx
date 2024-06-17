@@ -3,7 +3,7 @@
 import { Button, Form } from "react-bootstrap";
 import "./CSS/LoginSignup.css";
 
-// Define the LoginSignup component
+
 const LoginSignup = () => {
   return (
     <div className="loginsignup container mt-5">

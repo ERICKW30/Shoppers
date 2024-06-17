@@ -30,7 +30,7 @@ const Shop = () => {
       <Offers />
       <NewCollections />
 
-      <div className="text-center text-success mt-4 h2">Featured Products</div>
+      <div className="text-center text-success mt-4 h2">Featured Product</div>
       <hr
         className="bg-dark w-25"
         style={{ marginLeft: "auto", marginRight: "auto" }}

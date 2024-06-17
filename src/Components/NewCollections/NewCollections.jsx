@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const NewCollections = () => {
   return (
     <Container className="new-collections text-center my-5">
-      <h1 className="text-success">NEW COLLECTIONS</h1>
+      <h1 className="text-success">COLLECTIONS</h1>
       <hr
         className="bg-dark w-25"
         style={{ marginLeft: "auto", marginRight: "auto" }}

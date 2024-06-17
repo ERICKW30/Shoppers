@@ -7,7 +7,7 @@ const Breadcrumbs = () => {
   const location = useLocation();
   const { productId } = useParams();
 
-  // Extract the pathname from the location
+  // Extract the pathname from the location.
 
   const pathnames = location.pathname.split("/").filter((x) => x);
 

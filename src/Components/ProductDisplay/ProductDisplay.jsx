@@ -16,7 +16,7 @@ const ProductDisplay = ({ product }) => {
       </Col>
 
       <Col xs={1} sm={1} md={6}>
-        <div className="d-flex flex-column mt-5">
+        <div className="d-flex flex-column mt-4">
           <h1>{product.name}</h1>
           <div className="d-flex align-items-center gap-2 mt-5">
             <Image src={star_icon} alt="" />

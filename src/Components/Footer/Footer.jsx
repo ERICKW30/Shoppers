@@ -16,7 +16,7 @@ const Footer = () => {
       </Row>
       <Row className="foot-links">
         <Col xs={12} sm={8} className="h4 justify-content-around">
-          <li className="list-unstyled">Offices</li>
+          <li className="list-unstyled">Office</li>
           <li className="list-unstyled">Products</li>
           <li className="list-unstyled">About</li>
           <li className="list-unstyled">Company</li>

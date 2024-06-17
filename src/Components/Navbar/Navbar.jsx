@@ -76,7 +76,7 @@ const CustomNavbar = () => {
                 fontSize: "0.5cm",
                 width: "100px",
                 height: "40px",
-                marginLeft: "5px",
+                marginLeft: "6px",
                 marginTop: "20px",
                 background: " hsl(108, 60%, 50%)",
                 color: "#fff",

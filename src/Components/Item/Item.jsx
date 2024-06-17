@@ -22,7 +22,7 @@ const Item = ({ id, image, name, new_price, old_price }) => {
           style={{ width: "100%" }}
           block
           onClick={() => {
-            addToCart(id); // Fixed typo here
+            addToCart(id); 
           }}
           className="mt-3"
         >

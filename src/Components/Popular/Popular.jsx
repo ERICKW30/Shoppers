@@ -18,7 +18,7 @@ const Popular = () => {
         style={{ maxHeight: "400px" }}
       >
         {data_product.map((item, i) => (
-          <Col key={i} xs={12} sm={6} md={4} lg={3} className="mb-3">
+          <Col key={i} xs={12} sm={6} md={4} lg={3} className="mb-4">
             <Card>
               <Card.Img variant="top" src={item.image} />
               <Card.Body>
